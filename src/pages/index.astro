@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Nav from "../components/Nav.astro";
+---
+
+<Layout title="Welcome to Astro.">
+	<main class="">
+		<Nav />
+		<div class="grid-cols-2 grid items-center h-[85vh] p-8">
+			<div class="flex w-full justify-center">
+				<img src="IMG_0429.jpg" alt="" class="rounded-full h-3/4 w-3/4" />
+			</div>
+			<div class="flex w-full justify-center">
+				<div class="flex flex-col gap-2">
+					<h1 class="font-inter font-bold text-3xl">Hello, I'm Archer 👋</h1>
+					<h2 class="font-inter">
+						Undergraduate student at Republic Polytechnic, Singapore.
+						<br />Diploma in Digital Design and Development.
+					</h2>
+				</div>
+			</div>
+		</div>
+		<div
+			class="flex w-full items-center flex-col gap-2 hover:scale-105 transition-transform cursor-pointer"
+		>
+			<p class="font-inter text-s">About me</p>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="white"
+				class="w-6 h-6 animate-bounce"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"></path>
+			</svg>
+		</div>
+	</main>
+</Layout>
